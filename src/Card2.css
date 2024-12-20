@@ -1,0 +1,134 @@
+.card2-container {
+    width: 100%;
+    max-width: 420px;
+    background: #f4f7f6;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 150px auto;
+    font-family: 'Roboto', sans-serif;
+    transform: scale(1);
+}
+
+.card2-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2);
+}
+
+.card2-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card2-img-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card2-title p {
+    margin: 5px 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.card2-body {
+    padding: 20px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card2-bio {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card2-body p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card2-body strong {
+    color: #4a90e2;
+}
+
+.card2-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.card2-btn {
+    background: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 45%;
+}
+
+.card2-btn:hover {
+    background: #357ABD;
+}
+
+.card2-btn:active {
+    background: #2F6A99;
+}
+
+@media (max-width: 600px) {
+    .card2-container {
+        max-width: 350px;
+    }
+
+    .card2-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card2-img-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .card2-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .card2-footer {
+        flex-direction: column;
+    }
+
+    .card2-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
